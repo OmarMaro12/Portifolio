@@ -4,22 +4,162 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Profile</title>
-  <link rel="stylesheet" href="style.css">
 
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #3f51b5, #5a55ae);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header img {
+      width: 100px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    .header h1 { font-size: 2rem; }
+    .header p { font-size: 1.1rem; opacity: 0.9; }
+
+    .section {
+      padding: 30px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section:last-child { border-bottom: none; }
+
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #3f51b5;
+    }
+
+    ul { list-style: none; }
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-left: 3px solid #3f51b5;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f9f9f9;
+      padding: 12px 15px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .contact-item:hover {
+      background: #eaeaea;
+    }
+
+    .contact-item img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .contact-item a {
+      color: #3f51b5;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #f0f0f0;
+      color: #000000;
+      position: relative;
+    }
+
+    .footer a {
+      color: #3f51b5;
+      text-decoration: none;
+    }
+
+    .top {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+      }
+
+      .header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .header h1 {
+        font-size: 1.6rem;
+      }
+
+      .header p {
+        font-size: 1rem;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .contact-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 0.95rem;
+      }
+
+      .contact-item img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
+  <div class="container" id="port">
     <div class="header">
-      <img src="WhatsApp Image 2025-04-08 at 1.14.07 PM.jpeg" alt="Profile Photo">
+      <img src="WhatsApp Image 2025-10-20 at 4.09.33 PM.jpeg" alt="Profile Photo">
       <h1>Omar Hesham</h1>
-      <p>Web Developer Creative Thinker</p>
+      <p>Web Developer • Creative Thinker</p>
     </div>
 
     <div class="section">
       <h2>About Me</h2>
       <p>
-        I am a passionate web developer  who loves creating clean,
+        I am a passionate web developer who loves creating clean,
         professional designs. Always eager to learn 
         and explore new technologies.
       </p>
@@ -38,22 +178,40 @@
     <div class="section">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Computer Nova</strong> </li>
+        <li><strong>Computer Nova</strong></li>
         <li><strong>Pizza Hut Website</strong></li>
-        <li><strong>Temperautre Converter</strong>.</li>
+        <li><strong>Temperature Converter</strong></li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Contact</h2>
-<p>Email: <a href="mailto:omar.hesham.m.kamal@gmail.com">omar.hesham.m.kamal@gmail.com</a></p>
-      <p>Facebook: <a href="https://www.facebook.com/omar.hesham.810779">https://www.facebook.com/omar.hesham.810779</a></p>
-      <p>GitHub: <a href="https://github.com/OmarMaro12">https://github.com/OmarMaro12</a></p>
-
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email icon">
+          <a href="mailto:omar.hesham.m.kamal@gmail.com">omar.hesham.m.kamal@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook icon">
+          <a href="https://www.facebook.com/omar.hesham.810779" target="_blank">facebook.com/omar.hesham.810779</a>
+        </div>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub icon">
+          <a href="https://github.com/OmarMaro12" target="_blank">github.com/OmarMaro12</a>
+        </div>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp icon">
+          <a href="https://wa.me/201208710356" target="_blank">Chat on WhatsApp</a>
+        </div>
+      </div>
     </div>
 
-      © 2025 Omar Hesham
-    </div>
+    <footer class="footer">
+      <a href="#port">
+        <img class="top" src="./arrow-up-circle-svgrepo-com.svg" alt="Back to top" width="30">
+      </a>
+      <p>&copy; Made by Omar Hesham | All Rights Reserved</p>
+    </footer>
   </div>
 
 </body>

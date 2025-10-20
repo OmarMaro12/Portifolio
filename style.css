@@ -6,7 +6,6 @@
       line-height: 1.6;
     }
 
-    /* Container */
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -16,7 +15,6 @@
       overflow: hidden;
     }
 
-    /* Header */
     .header {
       background: linear-gradient(135deg, #3f51b5, #5a55ae);
       color: #fff;
@@ -33,7 +31,6 @@
     .header h1 { font-size: 2rem; }
     .header p { font-size: 1.1rem; opacity: 0.9; }
 
-    /* Sections */
     .section {
       padding: 30px;
       border-bottom: 1px solid #eee;
@@ -53,15 +50,18 @@
       border-left: 3px solid #3f51b5;
     }
 
-    /* Footer */
     .footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
       background: #f0f0f0;
-      color: #666;
+      color: #000000;
     }
     .footer a {
       color: #3f51b5;
       text-decoration: none;
+    }
+
+    .top {
+      float: left;
     }
