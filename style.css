@@ -1,3 +1,4 @@
+
     * {margin:0; padding:0; box-sizing:border-box;}
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,13 +22,15 @@
       text-align: center;
       padding: 40px 20px;
     }
+
     .header img {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 130px;
       border-radius: 50%;
       border: 4px solid #fff;
       margin-bottom: 15px;
     }
+
     .header h1 { font-size: 2rem; }
     .header p { font-size: 1.1rem; opacity: 0.9; }
 
@@ -35,6 +38,7 @@
       padding: 30px;
       border-bottom: 1px solid #eee;
     }
+
     .section:last-child { border-bottom: none; }
 
     .section h2 {
@@ -50,18 +54,87 @@
       border-left: 3px solid #3f51b5;
     }
 
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f9f9f9;
+      padding: 12px 15px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .contact-item:hover {
+      background: #eaeaea;
+    }
+
+    .contact-item img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .contact-item a {
+      color: #3f51b5;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
     .footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
       background: #f0f0f0;
       color: #000000;
+      position: relative;
     }
+
     .footer a {
       color: #3f51b5;
       text-decoration: none;
     }
 
     .top {
-      float: left;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+      }
+
+      .header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .header h1 {
+        font-size: 1.6rem;
+      }
+
+      .header p {
+        font-size: 1rem;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .contact-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 0.95rem;
+      }
+
+      .contact-item img {
+        width: 20px;
+        height: 20px;
+      }
     }
